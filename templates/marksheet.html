@@ -175,6 +175,28 @@
                     </div>
                 </tr>
         </table>
+        <hr>
+        <div class="row">
+                <div class="col sm-3">
+                        
+                </div>
+                <div class="col sm-3">
+                        
+                </div>
+                <div class="col sm-3">
+                        Status:
+                </div>
+                {% if (status=="PASSED") %}
+                <div class="col sm-3 bg-success">
+                        {{ status }}
+                </div>
+                {% endif %}
+                {% if (status=="FAILED") %}
+                <div class="col sm-3 bg-danger">
+                        {{ status }}
+                </div>
+                {% endif %}
+        </div>
     </div>
 </body>
 </html>
